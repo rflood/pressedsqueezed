@@ -1,3 +1,5 @@
+<?php get_header(); ?>
+
 <section>
     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/hero.jpg" />
     <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
@@ -16,11 +18,5 @@
 
     <img src="http://localhost:8888//wordpress/wp-content/themes/pressedsqueezed/images/pancakes.jpg"/>
 </section>
-<footer>
-    <h1>Contact Us</h1>
-    <p>Pressed and Squeezed</p>
-    <p>2525 Orange Way, Orchard, CA 91104</p>
-    <p>Phone: (800) 424-3232</p>
-</footer>
-</body>
-</html>
+
+<?php get_footer(); ?>
